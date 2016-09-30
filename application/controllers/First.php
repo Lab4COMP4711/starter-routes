@@ -29,4 +29,24 @@ class First extends Application
 		$this->render();
 	}
 
+	public function gimme($id)
+	{
+
+		// this is the view we want shown
+		$this->data['pagebody'] = 'justone';
+
+		//$idInt=(int)$id;
+
+
+		// build the list of authors, to pass on to our view
+		$source = $this->quotes->get($id);
+		
+		$this->data['what'] = $source['what'];
+		$this->data['who'] = $source['who'];
+		$this->data['mug'] = $source['mug'];
+		
+
+		$this->render();
+	}
+
 }
