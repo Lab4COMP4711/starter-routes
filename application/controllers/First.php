@@ -9,6 +9,46 @@ class First extends Application
 	{
 		parent::__construct();
 	}
+
+	/**
+	 * Homepage for our app
+	 */
+	public function index()
+	{
+		// this is the view we want shown
+		$this->data['pagebody'] = 'justone';
+
+		// build the list of authors, to pass on to our view
+		$source = $this->quotes->get(1);
+		
+		$this->data['what'] = $source['what'];
+		$this->data['who'] = $source['who'];
+		$this->data['mug'] = $source['mug'];
+		
+
+		$this->render();
+	}
+
+	public function gimme($id)
+	{
+
+		// this is the view we want shown
+		$this->data['pagebody'] = 'justone';
+
+		//$idInt=(int)$id;
+
+
+		// build the list of authors, to pass on to our view
+		$source = $this->quotes->get($id);
+		
+		$this->data['what'] = $source['what'];
+		$this->data['who'] = $source['who'];
+		$this->data['mug'] = $source['mug'];
+		
+
+		$this->render();
+	}
+
         
         public function zzz()
         {
