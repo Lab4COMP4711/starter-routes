@@ -13,6 +13,7 @@ Changelog - Order most recent last
 
 5:10 - added Last controller
  - Andrew Lukonin
+ - Andrew Lukonin
  
 11:42am - added Wise controller with bingo method, also added a routing rule
             using regex for comp([0-9]+)/([a-zA-Z]+) to wise/bingo

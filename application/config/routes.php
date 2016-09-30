@@ -60,6 +60,7 @@ $route['dunno'] = function() {
 $route['comp([0-9]+)/([a-zA-Z]+)'] = 'wise/bingo';
 $route['sleep'] = 'first/zzz';
 $route['show/(:num)'] = 'first/gimme/$1';
+$route['(?i)(wise)/bingo'] = 'bingo';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
