@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+$route['comp([0-9]+)/([a-zA-Z]+)'] = 'wise/bingo';
 $route['sleep'] = 'first/zzz';
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['default_controller'] = 'welcome';
