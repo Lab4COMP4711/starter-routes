@@ -1,5 +1,8 @@
 Changelog - Order most recent last
 
+3:58pm - added the changelog
+-Derek Larson
+
 9/30/2016
 10:08 AM - Added Routing rule, leading to first/gimme/$id
 -Ivelin Ivanov
@@ -8,10 +11,9 @@ Changelog - Order most recent last
 9:50 AM - Added First controller
 -Ivelin Ivanov
 
-3:58pm - added the changelog
--Derek Larson
-
 5:10 - added Last controller
  - Andrew Lukonin
  
- 
+11:42am - added Wise controller with bingo method, also added a routing rule
+            using regex for comp([0-9]+)/([a-zA-Z]+) to wise/bingo
+ - Derek Larson
