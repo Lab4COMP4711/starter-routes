@@ -30,4 +30,24 @@ class Welcome extends Application
 		$this->render();
 	}
 
+	/**
+	 * Method for the lockemup route
+	 */
+	public function shucks()
+	{
+		// this is the view we want shown
+		$this->data['pagebody'] = 'justone';
+
+		// build the list of authors, to pass on to our view
+		$source = $this->quotes->get(2);
+		
+		$this->data['what'] = $source['what'];
+		$this->data['who'] = $source['who'];
+		$this->data['mug'] = $source['mug'];
+		
+
+		$this->render();
+	
+	}
+
 }
