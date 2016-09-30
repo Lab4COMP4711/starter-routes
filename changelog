@@ -17,3 +17,6 @@ Changelog - Order most recent last
 11:42am - added Wise controller with bingo method, also added a routing rule
             using regex for comp([0-9]+)/([a-zA-Z]+) to wise/bingo
  - Derek Larson
+
+11:55am - added rout rule for /dunno using a callback function
+ - Derek Larson
