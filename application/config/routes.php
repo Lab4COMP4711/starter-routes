@@ -49,6 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+$route['lock/(:any)/(:any)'] = 'welcome/shucks';
 $route['dunno'] = function() {
     $source = './pix/Anonymous-150x150.jpg'; // an image you provide
     // set the mime type for that image
