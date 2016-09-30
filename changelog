@@ -20,3 +20,6 @@ Changelog - Order most recent last
 
 11:55am - added rout rule for /dunno using a callback function
  - Derek Larson
+
+12:28pm - helped add the shucks method to the welcome controller and the corresponding route
+ - Derek Larson
