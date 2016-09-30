@@ -1,11 +1,15 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 class Welcome extends Application
 {
+
 	function __construct()
 	{
 		parent::__construct();
 	}
+
 	/**
 	 * Homepage for our app
 	 */
@@ -13,6 +17,7 @@ class Welcome extends Application
 	{
 		// this is the view we want shown
 		$this->data['pagebody'] = 'homepage';
+
 		// build the list of authors, to pass on to our view
 		$source = $this->quotes->all();
 		$authors = array ();
@@ -21,31 +26,8 @@ class Welcome extends Application
 			$authors[] = array ('who' => $record['who'], 'mug' => $record['mug'], 'href' => $record['where']);
 		}
 		$this->data['authors'] = $authors;
-		$this->render();
-	}
-
-	/**
-	 * Method for lockemup route
-	 */
-	public function shucks()
-	{
-		// this is the view we want shown
-		$this->data['pagebody'] = 'justone';
-
-		//$idInt=(int)$id;
-
-
-		// build the list of authors, to pass on to our view
-		$source = $this->quotes->get(2);
-		
-		$this->data['what'] = $source['what'];
-		$this->data['who'] = $source['who'];
-		$this->data['mug'] = $source['mug'];
-		
 
 		$this->render();
 	}
-
-
         
 }
